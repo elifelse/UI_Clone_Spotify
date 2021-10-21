@@ -1,0 +1,88 @@
+:root{
+    --primary-color:green;
+    --dark-color:black;
+    --gray-1:gray;
+    --gray-2:darkgray;
+    --light-color:white;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.limited-width{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.logo{
+    color:var(--light-color);
+    display: flex;
+    align-items: center;
+}
+
+.logo i{
+    font-size: 36px;
+    margin-right: 8px;
+}
+
+#page{
+    border:2px solid black;
+}
+
+#page-header{
+    background-color: var(--dark-color);
+    padding: 12px;
+}
+
+main{
+    border:2px solid black;
+}
+
+#page-footer{
+    border:2px solid blue;
+}
+
+/* --- Buttons ---*/
+.btn-hamburger {
+    background-color: red;
+    border: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.btn-hamburger span {
+    display: block;
+    width: 16px;
+    height: 4px;
+    background-color: var(--light-color);
+    margin: 2px 0;
+}
+
+/* --- Navs ---*/
+.nav-hamburger {
+    background-color: gray;
+    padding: 20px;
+    position: fixed;
+    top: 50px;
+    right: -280px;
+    transition:right 0.5s;
+}
+
+.nav-hamburger.on {
+    right: 20px;
+}
+
+.nav-hamburger a{
+    color: var(--light-color);
+    font-size: 50px;
+}
+
+.nav-hamburger a:hover{
+    color: var(--primary-color);
+}
